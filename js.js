@@ -1,3 +1,3 @@
 $(document).ready(function() {
-  $('p').append('<h3>This might work???</h3>');
+  $('p').after('<h3>This might work???</h3>');
 })

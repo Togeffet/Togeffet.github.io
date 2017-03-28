@@ -1,3 +1,6 @@
 $(document).ready(function() {
-  $('p').after('<h3>This might work???</h3>');
+
+  $(document).click(function() {
+    $('p').after('<h1>This might work??</h1>');
+  });
 })

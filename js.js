@@ -1,8 +1,15 @@
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+
 $(document).ready(function() {
-  var i = 1;
   $(document).click(function() {
-    $('p').after(i);
-    i++;
-    i += (100 * i);
+    $('body').css('color', getRandomColor());
   });
 })

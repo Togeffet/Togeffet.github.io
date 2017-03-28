@@ -10,6 +10,6 @@ function getRandomColor() {
 
 $(document).ready(function() {
   $(document).click(function() {
-    $('body').css('color', getRandomColor());
+    $('body').css('background-color', getRandomColor());
   });
 })
